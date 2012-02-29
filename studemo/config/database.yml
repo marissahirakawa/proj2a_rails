@@ -1,0 +1,10 @@
+# config/database.yml
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: studemo
+  pool: 5
+  username: bob
+  password: somepass
+
+
