@@ -1,9 +1,9 @@
 /  app/views/students/selectStudent.html.haml
-%form{:method => "post", :action => "deleteStudent"}
-  %select{:method => "student_id", :size => 6}
+%form{:method => "post", :action => "editStudent"}
+  %select{:name => "student_id", :size => 6}
     - @students.each do |s|
       %option{:value => s.id}
-        = s.first_name + " " + s.last_name
+        = s.first_name + " " + s.last_name + " " + s.major
   %br
   %br
   %input{:type => "submit", :value => "Select"}
